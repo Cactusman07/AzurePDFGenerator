@@ -97,7 +97,6 @@ namespace pdfCreation
         {
             try{
                 Log.LogInformation("C# HTTP trigger function started for HTML2PDF.");
-                Log.LogInformation(Request.HtmlContent);
 
                 // PDFByteArray is a byte array of pdf generated from the HtmlContent 
                 var PDFByteArray = BuildPdf(Request.HtmlContent, new MarginSettings(2, 2, 2, 2));
